@@ -24,14 +24,25 @@ export default function GeneratePage() {
     setLoading(true);
     setError("");
     setResult(null);
-    try {
-      const res = await axios.post("/api/generate", form);
-      setResult(res.data.content);
-    } catch (err: any) {
-      setError(err.response?.data?.error || "Error generating ad");
-    }
-    setLoading(false);
-  };
+   try {
+  setError("");
+
+  const res = await axios.post("/api/generate", {
+    productName,
+    description,
+    targetAudience,
+    tone,
+    platform,
+  });
+
+  setResult(res.data.content);
+} catch (err: any) {
+  setError(
+    err?.response?.data?.error ||
+      "Something went wrong. Please try again."
+  );
+}
+
 
   return (
     <main style={{
