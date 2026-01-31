@@ -87,6 +87,29 @@ export default function GeneratePage() {
       </form>
 
       {error && <p style={{ color: "red", marginTop: 12 }}>{error}</p>}
+<form onSubmit={handleGenerate}>
+  {/* inputs */}
+
+  <button type="submit">Generate Ad</button>
+</form>
+
+{error && (
+  <div
+    style={{
+      marginTop: "20px",
+      padding: "14px",
+      backgroundColor: "#fff2f2",
+      border: "1px solid #f3c0c0",
+      borderRadius: "8px",
+      color: "#a40000",
+      fontSize: "14px",
+    }}
+  >
+    {error}
+  </div>
+)}
+
+{/* result output goes below */}
 
       {result && (
         <div style={{ marginTop: 24 }}>
