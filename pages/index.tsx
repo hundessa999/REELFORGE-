@@ -3,17 +3,26 @@ import Link from "next/link";
 
 const Home: React.FC = () => {
   return (
-    <main style={{ padding: "60px 20px", maxWidth: 1100, margin: "0 auto" }}>
+    <main
+      style={{
+        padding: "60px 20px",
+        maxWidth: 1100,
+        margin: "0 auto",
+        backgroundColor: "#f0f4f8", // Light gray background
+        minHeight: "100vh",
+        fontFamily: "Arial, sans-serif",
+      }}
+    >
       {/* HERO SECTION */}
-      <section style={{ textAlign: "center" }}>
-        <h1 style={{ fontSize: "44px", fontWeight: 700 }}>Reelforge</h1>
-        <p style={{ fontSize: "18px", marginTop: 12, color: "#555" }}>
+      <section style={{ textAlign: "center", padding: "40px 20px" }}>
+        <h1 style={{ fontSize: "48px", fontWeight: 700 }}>Reelforge</h1>
+        <p style={{ fontSize: "20px", marginTop: 12, color: "#555" }}>
           AI Reels Ad Generator
         </p>
         <p
           style={{
             marginTop: 20,
-            fontSize: "20px",
+            fontSize: "18px",
             maxWidth: 700,
             marginLeft: "auto",
             marginRight: "auto",
@@ -21,8 +30,7 @@ const Home: React.FC = () => {
             color: "#333",
           }}
         >
-          Generate high-converting Instagram and TikTok reel ads in seconds.
-          Scripts, hooks, captions, and hashtags powered by AI.
+          Generate high-converting Instagram and TikTok reel ads in seconds. Scripts, hooks, captions, and hashtags powered by AI.
         </p>
         <Link href="/generate">
           <a
@@ -52,37 +60,42 @@ const Home: React.FC = () => {
           textAlign: "center",
         }}
       >
-        <div>
+        <div style={{ backgroundColor: "#fff", padding: 20, borderRadius: 12 }}>
           <strong>AI-Generated Scripts</strong>
-          <p style={{ color: "#555" }}>
+          <p style={{ color: "#555", marginTop: 10 }}>
             Hooks, captions, and hashtags optimized for reels.
           </p>
         </div>
-        <div>
+        <div style={{ backgroundColor: "#fff", padding: 20, borderRadius: 12 }}>
           <strong>Multiple Tones</strong>
-          <p style={{ color: "#555" }}>
+          <p style={{ color: "#555", marginTop: 10 }}>
             Energetic, professional, or casual in one click.
           </p>
         </div>
-        <div>
+        <div style={{ backgroundColor: "#fff", padding: 20, borderRadius: 12 }}>
           <strong>Platform Ready</strong>
-          <p style={{ color: "#555" }}>Built for Instagram Reels and TikTok.</p>
+          <p style={{ color: "#555", marginTop: 10 }}>
+            Built for Instagram Reels and TikTok.
+          </p>
         </div>
-        <div>
+        <div style={{ backgroundColor: "#fff", padding: 20, borderRadius: 12 }}>
           <strong>API-Powered</strong>
-          <p style={{ color: "#555" }}>Easy to extend, white-label, or resell.</p>
+          <p style={{ color: "#555", marginTop: 10 }}>
+            Easy to extend, white-label, or resell.
+          </p>
         </div>
       </section>
 
       {/* HOW IT WORKS */}
-      <section style={{ marginTop: 90 }}>
-        <h2 style={{ textAlign: "center", fontSize: 32 }}>How it works</h2>
+      <section style={{ marginTop: 90, textAlign: "center" }}>
+        <h2 style={{ fontSize: 32 }}>How it works</h2>
         <ol
           style={{
             maxWidth: 700,
             margin: "30px auto 0",
             fontSize: 18,
             lineHeight: 1.8,
+            textAlign: "left",
           }}
         >
           <li>Enter your product details</li>
@@ -92,8 +105,8 @@ const Home: React.FC = () => {
       </section>
 
       {/* USE CASES */}
-      <section style={{ marginTop: 90 }}>
-        <h2 style={{ textAlign: "center", fontSize: 32 }}>Who is this for?</h2>
+      <section style={{ marginTop: 90, textAlign: "center" }}>
+        <h2 style={{ fontSize: 32 }}>Who is this for?</h2>
         <div
           style={{
             marginTop: 30,
@@ -103,11 +116,11 @@ const Home: React.FC = () => {
             textAlign: "center",
           }}
         >
-          <div>Marketing agencies</div>
-          <div>Dropshippers</div>
-          <div>Content creators</div>
-          <div>SaaS founders</div>
-          <div>Small businesses</div>
+          <div style={{ backgroundColor: "#fff", padding: 16, borderRadius: 12 }}>Marketing agencies</div>
+          <div style={{ backgroundColor: "#fff", padding: 16, borderRadius: 12 }}>Dropshippers</div>
+          <div style={{ backgroundColor: "#fff", padding: 16, borderRadius: 12 }}>Content creators</div>
+          <div style={{ backgroundColor: "#fff", padding: 16, borderRadius: 12 }}>SaaS founders</div>
+          <div style={{ backgroundColor: "#fff", padding: 16, borderRadius: 12 }}>Small businesses</div>
         </div>
       </section>
 
@@ -116,7 +129,7 @@ const Home: React.FC = () => {
         style={{
           marginTop: 100,
           padding: 40,
-          backgroundColor: "#f6f6f6",
+          backgroundColor: "#e0e7ef",
           borderRadius: 12,
           textAlign: "center",
         }}
