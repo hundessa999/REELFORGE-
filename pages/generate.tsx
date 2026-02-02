@@ -114,8 +114,11 @@ export default function Generate() {
       </button>
 
       {error && (
-        <p style={{ color: "red", marginTop: "15px" }}>{error}</p>
-      )}
+  <p style={{ color: "red", marginTop: "15px" }}>
+    {error} (Demo mode active – no API key needed)
+  </p>
+)}
+
 
       {result && (
         <div
