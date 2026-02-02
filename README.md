@@ -1,7 +1,75 @@
+# Reelforge – AI Reels Ad Generator
 
-# Reelforge
+Reelforge is a flip-ready SaaS built with Next.js and TypeScript that generates high-converting ad scripts for TikTok, Instagram Reels, and YouTube Shorts using AI.
 
-Reelforge is an AI-powered reels ad generator that helps businesses create high-converting short-form ad content in minutes.
-It generates hooks, scripts, captions, CTAs, and hashtags for TikTok, Instagram Reels, and YouTube Shorts.
+Designed for fast resale, easy extension, and Vercel deployment.
 
-Built as a lean, resale-ready SaaS MVP.
+---
+
+## Features
+
+- AI-powered reels ad script generation
+- Supports TikTok, Instagram Reels, and YouTube Shorts
+- Tone selection (Professional, Energetic, Casual)
+- Clean, modern UI
+- Error-safe frontend validation
+- Vercel-ready deployment
+- Buyer adds own OpenAI API key
+
+---
+
+## Tech Stack
+
+- Next.js 13
+- TypeScript
+- React 18
+- Axios
+- OpenAI API (optional, buyer configured)
+
+---
+
+## Live Demo
+
+https://reelforge-eta.vercel.app
+
+---
+
+## Getting Started (Local)
+
+1. Clone the repository
+2. Install dependencies
+
+```bash
+npm install
+touch .env.local
+OPENAI_API_KEY=your_openai_api_key
+npm run dev
+Deployment (Vercel)
+
+Push the repository to GitHub
+
+Import project into Vercel
+
+Framework: Next.js
+
+Build command: npm run build
+
+Root directory: ./
+
+Add environment variable OPENAI_API_KEY
+
+Deploy
+
+Monetization Ideas
+
+Charge per generated ad
+
+Monthly SaaS subscription
+
+White-label for agencies
+
+Bundle with video generation tools
+
+License
+
+MIT License. Free to modify, resell, and commercialize.
