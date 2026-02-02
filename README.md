@@ -71,5 +71,10 @@ White-label for agencies
 Bundle with video generation tools
 
 License
+## Demo Mode
+
+Reelforge works fully in demo mode without an OpenAI API key.
+Users can see ad generation instantly with placeholder content.
+Buyers can add their own OpenAI API key in `.env.local` to generate real ads.
 
 MIT License. Free to modify, resell, and commercialize.
